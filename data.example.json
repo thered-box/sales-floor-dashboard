@@ -1,0 +1,46 @@
+{
+  "asOf": "2026-06-12",
+  "reps": [
+    { "name": "Alex Rivera", "color": "#4FC3F7" },
+    { "name": "Sam Chen", "color": "#C084FC" }
+  ],
+  "payments": [
+    { "name": "Summit Builders", "amount": 4000, "date": "2026-06-02", "rep": "Alex Rivera", "newDeal": true, "url": "https://your-crm.example.com/records/1001" },
+    { "name": "Harbor & Co.", "amount": 1500, "date": "2026-06-02", "rep": "Sam Chen", "newDeal": false },
+    { "name": "Redwood Homes", "amount": 2500, "date": "2026-06-05", "rep": "Alex Rivera", "newDeal": true },
+    { "name": "Beacon Facilities", "amount": 999, "date": "2026-06-11", "rep": "Sam Chen", "newDeal": true }
+  ],
+  "deals": [
+    { "name": "Summit Builders — Website", "amount": 6500, "rep": "Alex Rivera", "stage": "Deal Won", "closeDate": "2026-06-03" },
+    { "name": "Harbor & Co. — Retainer", "amount": 12000, "rep": "Sam Chen", "stage": "Contract Signed", "closeDate": "2026-06-08" }
+  ],
+  "meetings": [
+    { "contact": "Chris Patel", "setter": "Alex Rivera", "forRep": "Sam Chen", "date": "2026-06-03T10:00:00" },
+    { "contact": "Dana Wolfe", "setter": "Sam Chen", "forRep": "Sam Chen", "date": "2026-06-05T14:30:00" }
+  ],
+  "calls": {
+    "days": ["Mon 08", "Tue 09", "Wed 10", "Thu 11", "Fri 12"],
+    "byRep": {
+      "Alex Rivera": [
+        { "placed": 52, "conn30": 24, "conn60": 11, "details": [
+          { "name": "Summit Builders", "number": "+1 (555) 201-8890", "durationSec": 83, "time": "9:14 AM" }
+        ] },
+        { "placed": 47, "conn30": 20, "conn60": 8 },
+        { "placed": 61, "conn30": 31, "conn60": 15 },
+        { "placed": 39, "conn30": 14, "conn60": 6 },
+        { "placed": 44, "conn30": 19, "conn60": 9 }
+      ],
+      "Sam Chen": [
+        { "placed": 40, "conn30": 18, "conn60": 7 },
+        { "placed": 55, "conn30": 26, "conn60": 12 },
+        { "placed": 33, "conn30": 12, "conn60": 5 },
+        { "placed": 48, "conn30": 22, "conn60": 10 },
+        { "placed": 50, "conn30": 24, "conn60": 11 }
+      ]
+    }
+  },
+  "newLeads": [
+    { "id": "L-2041", "name": "Ironwood Group", "owner": "Alex Rivera", "enteredAt": "2026-06-12T14:25:00Z", "url": "https://your-crm.example.com/leads/2041" },
+    { "id": "L-2042", "name": "Crestline LLC", "owner": "Sam Chen", "enteredAt": "2026-06-12T14:19:00Z" }
+  ]
+}

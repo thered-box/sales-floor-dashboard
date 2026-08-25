@@ -1,0 +1,9 @@
+# local data (don't commit real client numbers)
+data.json
+
+# os / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

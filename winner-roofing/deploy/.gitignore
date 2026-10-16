@@ -1,0 +1,4 @@
+# build output and anything that could carry a credential
+dist/
+*.dev.vars
+.wrangler/

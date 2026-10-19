@@ -7,7 +7,7 @@ live data feed wired.
 
 ## Part of the Business 411 operating system
 
-The hub repo [`thered-box/b411-os`](https://github.com/thered-box/b411-os) (formerly
+The hub repo [`thered-box/411-os`](https://github.com/thered-box/411-os) (formerly
 `GeneralB411`) holds the shared knowledge every agent reads first — systems map, data
 definitions, Zoho query mechanics, decisions log, shared memory. Read its `CLAUDE.md`
 before changing anything that touches real numbers. This repo belongs to the **sales**

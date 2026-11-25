@@ -52,6 +52,8 @@ export default {
 
     let path = url.pathname;
     if (path === "/" || path === "/index.html") path = "/index.html";
+    // the sales manager report (sample data, same branding) lives at /manager
+    if (path === "/manager" || path === "/manager/" || path === "/manager.html") path = "/manager.html";
 
     if (path === "/robots.txt") {
       return new Response("User-agent: *\nDisallow: /\n", { headers: headers("text/plain; charset=utf-8") });
@@ -69,7 +71,7 @@ export default {
     if (f.b64) {
       return new Response(request.method === "HEAD" ? null : bytes(path, f), { headers: headers(f.type, null, true) });
     }
-    if (path === "/index.html") {
+    if (f.type.startsWith("text/html")) {
       // nonce every inline <script> so the CSP needs no 'unsafe-inline' for scripts
       const nonce = crypto.randomUUID().replace(/-/g, "");
       const body = f.body.replace(/<script>/g, `<script nonce="${nonce}">`);

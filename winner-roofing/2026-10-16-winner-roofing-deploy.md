@@ -18,6 +18,7 @@ sample data.
 | `/` | sample data (default for this edition: `demoByDefault: true` in `config.js`) |
 | `/?demo=0` | the blank board, as it would look before a data feed is connected |
 | `/?demo=1` | sample data, explicitly |
+| `/manager` | the **sales manager report** (sample data only; added 25 Nov 2026) |
 
 The footer link switches between the two. The sample data follows the calendar: it always
 shows the current month to date (or last month in full during the first six days), and the
@@ -84,6 +85,7 @@ or delete `sample-data.js`.
 | File | What it is |
 |---|---|
 | `index.html` | the dashboard (copied from the template; branding + chart fixes) |
+| `manager.html` | the sales manager report at `/manager`. **Generated, do not hand-edit**: built by `demo/2026-11-25-build-demo.py` in `thered-box/business411-sales-floor` (branch `claude/winner-roofing-demo`) from the live Business 411 manager report, with an in-page sample-data layer and a leak check that refuses real names, ids and URLs. Rebuild there, copy the output here as `manager.html`, then redeploy. |
 | `config.js` | Winner Roofing branding, reps, demo-by-default |
 | `sample-data.js` | fictitious roofing sample data |
 | `data.example.json` | unchanged copy of the template's live-feed example |
